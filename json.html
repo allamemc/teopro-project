@@ -87,21 +87,34 @@
           </div>
 
             <div class="elemento b json j">
-              <div style="font-size: 20px;">
-                <p>
+              <div>
+                <div style="font-size: 20px;">
                   <h1>Historia</h1>
-                  <p>En abril de 2001, Douglas Crockford y Chip Morningstar enviaron el primer mensaje JSON desde una computadora en el garaje de Morningstar en el Área de la Bahía. Crockford y Morningstar intentaban crear aplicaciones AJAX mucho antes de que se acuñara el término "AJAX", pero el soporte del navegador para lo que intentaban lograr no era bueno. Deseaban pasar datos a su aplicación después de que se cargara la página, pero no habían encontrado una manera de permitir que esto funcionara en todos los navegadores.</p>
-
-                  <p>En 2001, el desarrollo de AJAX apenas comenzaba y aún no había una forma interoperable del objeto XMLHttpRequest en Internet Explorer 5 y Netscape 4. Entonces, Crockford y Morningstar usaron un enfoque diferente que funcionó en ambos navegadores.
-
-                  El envío del mensaje es en realidad un documento HTML que contiene algo de JavaScript, y solo una pequeña parte del mensaje se parece a JSON tal como lo conocemos hoy. Crockford y Morningstar pudieron cargar datos de forma asincrónica apuntando a una URL que devolvería un documento HTML como el de arriba. Cuando se recibió la respuesta, se ejecutaría el JavaScript en el HTML y, al eludir las protecciones del navegador que impiden que las ventanas secundarias accedan al padre, el objeto literal se devolvió al marco principal de la aplicación.</p> 
-                  <p>Esta técnica basada en marcos, a veces llamada "técnica de marco oculto", se usaba comúnmente a finales de los 90 antes de la implementación generalizada de XMLHttpRequest.</p>
-                  
-
-                  Este enfoque atrajo a los desarrolladores porque ofrecía interoperabilidad en todos los navegadores. Dado que el mensaje es solo JavaScript, no requiere ningún tipo de análisis especial. La idea de usar JavaScript de esta manera era tan sencilla que el propio Crockford dijo que no era la primera persona en hacerlo; afirma que alguien en Netscape estaba usando JavaScript para comunicar información desde 1996.15
-
-                  Crockford y Morningstar se dieron cuenta de que tenían algo que podía usarse en todo tipo de aplicaciones. Llamaron a su formato JSON, que es la abreviatura de "Notación de objetos de JavaScript". Comenzaron a proponérselo a los clientes, pero pronto descubrieron que muchos no estaban dispuestos a arriesgarse con una tecnología novedosa que carecía de una especificación oficial. Entonces Crockford decidió que escribiría uno. En 2002, Crockford compró el dominio JSON.org y puso la gramática JSON y una implementación de referencia de un analizador. El sitio web todavía está activo, aunque ahora incluye un enlace destacado al estándar JSON ECMA ratificado en 2013.16 Después de instalar el sitio web, Crockford hizo poco más para promover JSON, pero pronto encontró personas que enviaban implementaciones de analizadores JSON para diferentes lenguajes de programación. El origen de JSON está claramente ligado a JavaScript, pero se hizo evidente que JSON era adecuado para intercambiar datos entre lenguajes arbitrarios.
+                  <p>
+                    XML, sigla en inglés de Extensible Mark Lenguaje («lenguaje de marcas extensible»), es un metalenguaje extensible de etiquetas desarrollado por el World Wide Web Consortium(W3C).
+                    Es una simplificación y adaptación del SGML y permite definir la gramática de lenguajes específicos (de la misma manera que HTML es a su vez un lenguaje definido por SGML).  Por lo tanto, XML no es realmente un lenguaje en particular, sino una manera de definir lenguajes para diferentes necesidades.  Algunos de estos lenguajes que usan XML para su definición son XHTML,SVG,MathML.
+                  </p> 
+                  <p>
+                    XML no ha nacido sólo para su aplicación en Internet, sino que se propone como un estándar para el intercambio de información estructurada entre diferentes plataformas. Se puede usar en bases de datos, editores de texto, hojas de cálculo y casi cualquier cosa imaginable. Es una tecnología sencilla que tiene a su alrededor otras que la complementan y la hacen mucho más grande y con unas posibilidades mucho mayores.  Tiene un papel muy importante en la actualidad ya que permite la compatibilidad entre sistemas para compartir la información de una manera segura, fiable y fácil.
                   </p>
+                  <p>
+                    Proviene de un lenguaje inventado por IBM en los años setenta, llamado GML (Generalized Markup Lenguaje), que surgió por la necesidad que tenía la empresa de almacenar grandes cantidades de información.
+                  </p>
+                  <p>
+                    Este lenguaje gustó a la ISO, por lo que en 1986 trabajaron para normalizarlo, creando SGML (Standard Generalized Markup Language), capaz de adaptarse a un gran abanico de problemas. A partir de él se han creado otros sistemas para almacenar información. En el año 1989 Tim Berners Lee creó la web, y junto con ella el lenguaje HTML. Este lenguaje se definió en el marco de SGML y fue de lejos la aplicación más conocida de este estándar. Los navegadores web sin embargo siempre han puesto pocas exigencias al código HTML que interpretan y así las páginas web son caóticas y no cumplen con la sintaxis.  Estas páginas web dependen fuertemente de una forma específica de lidiar con los errores y las ambigüedades, lo que hace a las páginas más frágiles y a los navegadores más complejos. Otra limitación de SGML es que cada documento pertenece a un vocabulario fijo, establecido por el DTD.  No se pueden combinar elementos de diferentes vocabularios.  
+                  </p>
+                  <p>
+                    Asimismo, es imposible para un intérprete (por ejemplo, un navegador) analizar el documento sin tener conocimiento de su gramática (del DTD).  Por ejemplo, el navegador sabe que antes de una etiqueta &lt;div&gt; debe haberse cerrado cualquier &lt;p&gt; previamente abierto.  
+                  Los navegadores resolvieron esto incluyendo lógica ad hoc para el HTML, en vez de incluir un analizador genérico.  Ambas opciones, de todos modos, son muy complejas para los navegadores.  Se buscó entonces definir un subconjunto del SGML que permita:
+                  </p>
+                  <ul>
+                    <li>Mezclar   elementos   de   diferentes   lenguajes.   Es   decir   que   los   lenguajes   sean extensibles.</li>
+                    <li>La creación de analizadores simples, sin ninguna lógica especial para cada lenguaje.</li>
+                    <li>Empezar de cero y hacer hincapié en que no se acepte nunca un documento con errores de sintaxis.</li>
+                  </ul>  
+                  <p>
+                    Para hacer esto XML deja de lado muchas características de SGML que estaban pensadas para facilitar la escritura manual de documentos. XML en cambio está orientado a hacer las cosas más sencillas para los programas automáticos que necesiten interpretar el documento.
+                  </p>     
                 </div>
               </div>
             </div>
