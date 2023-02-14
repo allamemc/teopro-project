@@ -89,32 +89,25 @@
             <div class="elemento b json j">
               <div>
                 <div style="font-size: 20px;">
+                  <p>
                   <h1>Normas y Sintaxis</h1>
-                  <p>
-                    XML, sigla en inglés de Extensible Mark Lenguaje («lenguaje de marcas extensible»), es un metalenguaje extensible de etiquetas desarrollado por el World Wide Web Consortium(W3C).
-                    Es una simplificación y adaptación del SGML y permite definir la gramática de lenguajes específicos (de la misma manera que HTML es a su vez un lenguaje definido por SGML).  Por lo tanto, XML no es realmente un lenguaje en particular, sino una manera de definir lenguajes para diferentes necesidades.  Algunos de estos lenguajes que usan XML para su definición son XHTML,SVG,MathML.
-                  </p> 
-                  <p>
-                    XML no ha nacido sólo para su aplicación en Internet, sino que se propone como un estándar para el intercambio de información estructurada entre diferentes plataformas. Se puede usar en bases de datos, editores de texto, hojas de cálculo y casi cualquier cosa imaginable. Es una tecnología sencilla que tiene a su alrededor otras que la complementan y la hacen mucho más grande y con unas posibilidades mucho mayores.  Tiene un papel muy importante en la actualidad ya que permite la compatibilidad entre sistemas para compartir la información de una manera segura, fiable y fácil.
-                  </p>
-                  <p>
-                    Proviene de un lenguaje inventado por IBM en los años setenta, llamado GML (Generalized Markup Lenguaje), que surgió por la necesidad que tenía la empresa de almacenar grandes cantidades de información.
-                  </p>
-                  <p>
-                    Este lenguaje gustó a la ISO, por lo que en 1986 trabajaron para normalizarlo, creando SGML (Standard Generalized Markup Language), capaz de adaptarse a un gran abanico de problemas. A partir de él se han creado otros sistemas para almacenar información. En el año 1989 Tim Berners Lee creó la web, y junto con ella el lenguaje HTML. Este lenguaje se definió en el marco de SGML y fue de lejos la aplicación más conocida de este estándar. Los navegadores web sin embargo siempre han puesto pocas exigencias al código HTML que interpretan y así las páginas web son caóticas y no cumplen con la sintaxis.  Estas páginas web dependen fuertemente de una forma específica de lidiar con los errores y las ambigüedades, lo que hace a las páginas más frágiles y a los navegadores más complejos. Otra limitación de SGML es que cada documento pertenece a un vocabulario fijo, establecido por el DTD.  No se pueden combinar elementos de diferentes vocabularios.  
-                  </p>
-                  <p>
-                    Asimismo, es imposible para un intérprete (por ejemplo, un navegador) analizar el documento sin tener conocimiento de su gramática (del DTD).  Por ejemplo, el navegador sabe que antes de una etiqueta &lt;div&gt; debe haberse cerrado cualquier &lt;p&gt; previamente abierto.  
-                  Los navegadores resolvieron esto incluyendo lógica ad hoc para el HTML, en vez de incluir un analizador genérico.  Ambas opciones, de todos modos, son muy complejas para los navegadores.  Se buscó entonces definir un subconjunto del SGML que permita:
-                  </p>
+                  <p>Las reglas sintáctica de JSON son bastante sencillas:</p>
                   <ul>
-                    <li>Mezclar   elementos   de   diferentes   lenguajes.   Es   decir   que   los   lenguajes   sean extensibles.</li>
-                    <li>La creación de analizadores simples, sin ninguna lógica especial para cada lenguaje.</li>
-                    <li>Empezar de cero y hacer hincapié en que no se acepte nunca un documento con errores de sintaxis.</li>
-                  </ul>  
-                  <p>
-                    Para hacer esto XML deja de lado muchas características de SGML que estaban pensadas para facilitar la escritura manual de documentos. XML en cambio está orientado a hacer las cosas más sencillas para los programas automáticos que necesiten interpretar el documento.
-                  </p>     
+                    <li>En JSON existen dos tipos de elementos: matrices y objetos</li>
+                    <ul>
+                      <li>Matrices (arrays): Las matrices son listas de valores separados por comas. Las matrices se escriben entre corchetes [ ]</li>
+                      <li>Objetos (objects). Los objetos son listas de parejas nombre / valor. El nombre y el valor están separados por dos puntos : y las parejas están separadas por comas. Los objetos se escriben entre llaves { } y los nombres de las parejas se escriben siempre entre comillas dobles.</li> 
+                    </ul>
+                    <li>Un documento JSON está formado por un único elemento (un objeto o una matriz)</li>
+                    <li>Tanto en los objetos como en las matrices, el último elemento no puede ir seguido de una coma</li>
+                    <li>Los valores (tanto en los objetos como en las matrices) pueden ser:</li>
+                    <li>Los ficheros JSON no pueden contener comentarios.</li>
+                    <li>Números: enteros, decimales o en notación exponencial. El separador decimal es el punto ., un número negativo empieza por el signo menos - y el indicador de la notación exponencial es e o E. Los números positivos no pueden empezar por el signo +, los números no pueden empezar por varios ceros o por un cero seguido de otra cifra.</li>
+                    <li>Cadenas: Las cadenas se escriben entre comillas dobles. Los caracteres especiales y los valores Unicode se escriben con una contrabarra \ delante. Los caracteres que deben escribirse siempre como caracteres especiales son \" (comillas), \\ (contrabarra), \b (retroceso), \f (salto de página), \n (salto de línea), \r (retorno de carro), \t (tabulador) y los caracteres unicode (\u...). El carácter / (barra) puede escribirse como carácter / o como carácter especial \/ (suele ser necesario cuando el contenido es código html y la barra indica un cierre de etiquetas).</li>
+                    <li>Los valores true, false y null. Estos valores se escriben sin comillas.</li>
+                    <li>Objetos y matrices. Puede haber objetos y matrices dentro de objetos y de matrices, sin límite de anidamiento.</li>
+                  </ul>
+                </p>
                   
                 </div>
               </div>
